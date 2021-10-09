@@ -1,34 +1,96 @@
-html {
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;700&display=swap");
+
+/*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+
+*/
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --dark-blue: #4361ee;
+  --light-blue: #009ffd;
+}
+
+
+
 body {
-  background-color: #2b2b2b;
   display: flex;
+  flex-direction: column;
+  color: white;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: "Orbitron", sans-serif;
+  background-image: linear-gradient(315deg, var(--dark-blue) 0, var(--light-blue) 74%);
 }
 
-#container {
-  background:no-repeat;
-  position: relative;
-
+h1 {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  font-family: "Bitter", serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
 }
 
-#clocks{
-    position: absolute;
-    top: 15px;
-    left: 0px;
-    right: 0px;
-    color: aliceblue;
+/*
+ ______________________________________________
+|                                              |
+|              UTILITIES CLASS                 |
+|______________________________________________|
+*/
+
+.date-time {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  color: white;
 }
 
-img{
-    height: 100vh;
+.card {
+  margin: 3rem;
+  padding: 2rem;
+  background-image: linear-gradient(315deg, var(--dark-blue) 0, var(--light-blue) 74%);
+  box-shadow: 0 4px 8px 0 var(--dark-blue);
+  transition: 0.3s;
 }
 
-div{
-      text-align: center;  
+.card:hover {
+  box-shadow: 0 10px 20px 0 var(--light-blue);
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+.time {
+  font-size: 4rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 1.5rem;
+}
+
+
+.time span:last-child {
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: white;
+  color: var(--light-blue);
+  letter-spacing: 0rem;
+  border-radius: 2px;
+  margin: 0rem 0.5rem;
+  padding: 0.4rem;
 }
