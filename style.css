@@ -8,13 +8,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 #container {
   background:no-repeat;
+  position: relative;
 
+}
+
+#clocks{
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    right: 0px;
+    color: aliceblue;
 }
 
 img{
     height: 100vh;
+}
+
+div{
+      text-align: center;  
 }
