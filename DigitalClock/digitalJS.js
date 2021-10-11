@@ -9,28 +9,28 @@ const sec = document.getElementById('sec');
 const APM = document.getElementById('am-pm');
 
 let monthsName = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
+    "January,",
+    "February,",
+    "March,",
+    "April,",
+    "May,",
+    "June,",
+    "July,",
+    "August,",
+    "September,",
+    "October,",
+    "November,",
+    "December,"
 ];
 
 let weekDayName = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Sunday,",
+    "Monday,",
+    "Tuesday,",
+    "Wednesday,",
+    "Thursday,",
+    "Friday,",
+    "Saturday,",
 ];
 
 
