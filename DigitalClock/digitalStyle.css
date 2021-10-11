@@ -112,6 +112,11 @@ h1 {
     margin-top: 10rem;
   }
 
+  span {
+    padding: 0rem;
+    text-align: center;
+  }
+
   .date-time,
   .card,
   .date,
@@ -120,11 +125,6 @@ h1 {
     width: 80%;
     text-align: center;
     padding: auto;
-  }
-
-  span {
-    padding: 0rem;
-    text-align: center;
   }
 
   .date {

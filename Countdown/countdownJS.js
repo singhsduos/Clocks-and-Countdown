@@ -1,3 +1,4 @@
+// get all elements from doc
 const year = document.querySelector('.year');
 const month = document.querySelector('.month');
 const days = document.querySelector('.days');
@@ -7,10 +8,12 @@ const seconds = document.querySelector('.sec');
 
 
 const countDown = () => {
+    // declare time for which you are making countdown
     const nextDate = new Date("January 1, 2030 00:00:00").getTime();
     const todayDate = new Date().getTime();
     const gapDate = (nextDate - todayDate);
 
+    // convert all time in milliseconds
     const sec = 1000;
     const min = sec * 60;
     const hrs = min * 60;
@@ -18,6 +21,7 @@ const countDown = () => {
     const mnth = day * 30;
     const years = mnth * 12;
 
+    // find remainder of each time element
     const leftYear = Math.floor(gapDate / years);
     year.innerHTML = leftYear;
 
@@ -40,5 +44,5 @@ const countDown = () => {
 }
 
 
-
+// calling function every second
 setInterval(countDown, 1000);
