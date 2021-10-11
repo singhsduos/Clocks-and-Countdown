@@ -11,24 +11,72 @@ body {
   height: 100vh;
 }
 
+img {
+  height: 100vh;
+}
+
+div {
+  text-align: center;
+}
+
 #container {
-  background:no-repeat;
+  background: no-repeat;
   position: relative;
-
 }
 
-#clocks{
-    position: absolute;
-    top: 15px;
-    left: 0px;
-    right: 0px;
-    color: aliceblue;
+#clocks {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  right: 0px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-    height: 100vh;
+.CandC {
+  position: absolute;
+  top: 46px;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
-div{
-      text-align: center;  
+.clocks-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25rem;
+}
+
+.analog,
+.countdown,
+.digital {
+  position: absolute;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.analog {
+  top: 0rem;
+  width: 6rem;
+  height: 2rem;
+  left: -18rem;
+  right: 12rem;
+}
+
+.countdown {
+  top: 0rem;
+  width: 6rem;
+  height: 2rem;
+}
+
+.digital {
+    top: 0rem;
+  width: 6rem;
+  height: 2rem;
+  right: -18rem;
+  left: 12rem;
 }
