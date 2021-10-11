@@ -1,34 +1,125 @@
-html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #2b2b2b;
+  background-color: #fad2e1;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: auto;
+  width: 100%;
 }
 
-#container {
-  background:no-repeat;
-  position: relative;
-
+.container {
+  position: absolute;
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 10px 10px 25px #9c023a, -15px -15px 30px #ffc8dc;
 }
 
-#clocks{
-    position: absolute;
-    top: 15px;
-    left: 0px;
-    right: 0px;
-    color: aliceblue;
+.clock {
+  position: absolute;
+  height: 22.188rem;
+  width: 22.188rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../resources/clock.png);
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px 25px #9c023a, -15px -15px 30px #ffc8dc;
 }
 
-img{
-    height: 100vh;
+.clock::before {
+  content: "";
+  height: 0.938rem;
+  width: 0.938rem;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
-div{
-      text-align: center;  
+.hrs {
+  height: 9.375rem;
+  width: 9.375rem;
+}
+
+.min {
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+.sec {
+  height: 15.625rem;
+  width: 15.625rem;
+}
+
+.hrs,
+.min,
+.sec {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hrs::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 6.25rem;
+  width: 8px;
+  z-index: 10;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.min::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 7.813rem;
+  width: 5px;
+  z-index: 11;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.sec::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 9.375rem;
+  background-color: black;
+  width: 2px;
+  z-index: 12;
+  border-radius: 50%;
+}
+
+/*
+ ______________________________________________
+|                                              |
+|            MEDIA QUERIES CSS                 |
+|______________________________________________|
+*/
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 320px;
+    width: 320px;
+  }
+
+  .clock {
+    height: 300px;
+    width: 300px;
+  }
 }
