@@ -1,12 +1,12 @@
 # Clocks-and-Countdown
-This is a combine web app of Analog Clock, Countdown and Digital Clock
+This is a combined web app of Analog Clock, Countdown, and Digital Clock.
 
 ### <a href="https://clocksandcountdown.netlify.app/" target="_blank">**Visit Now 🚀**</a>
 
 
 ## Things I learend
-1. Using time function
-2. Showing time in client side
+1. Using time function.
+2. Showing time on the client-side.
 
 
 ## Tech Stack
